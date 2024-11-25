@@ -1,65 +1,47 @@
-# Python Packet Sniffer
+# Network Packet Analyzer
 
-A simple packet sniffer tool written in Python using the `scapy` library. This script captures and analyzes network packets, displaying information such as source and destination IP addresses, protocols, and payload data.
+This tool is a Python-based network packet analyzer developed using the Scapy library, designed to capture and analyze network traffic in real-time. It focuses on IP-based packets and provides insights into network protocols like TCP, UDP, and ICMP.
 
-## Features
+### **Key Features** 📋:  
+1. **Real-Time Packet Capture** 🕵️‍♂️:  
+   - Monitors live network traffic and captures IP-based packets.  
 
-- Captures network packets in real-time.
-- Displays source and destination IP addresses.
-- Identifies the protocol (TCP, UDP, ICMP).
-- Displays payload data if available.
+2. **Protocol Identification** 🔍:  
+   - Recognizes key protocols: **TCP**, **UDP**, and **ICMP**.  
 
-## Requirements
+3. **Detailed Packet Insights** 📊:  
+   - Displays:  
+     - **Source and Destination IPs**  
+     - **Protocol Type**  
+     - **Payload Data** for TCP/UDP packets (if available).  
 
-- Python 3.x
-- `scapy` library
+---
 
-## Installation
+### **How It Works** ⚙️:  
+1. **Packet Sniffing**:  
+   - Uses the **Scapy library** to sniff real-time network traffic.  
+   - Filters traffic to focus on IP-based packets.  
 
-1. **Clone the repository:**
+2. **Packet Analysis**:  
+   - For each captured packet:  
+     - Extracts the **source and destination IP addresses**.  
+     - Identifies the **protocol type** (e.g., TCP, UDP, ICMP).  
+     - Retrieves **payload data** for TCP/UDP packets, if available.  
 
-    ```bash
-    https://github.com/MuhammedFasilkk/PRODIGY_CS_05.git
-    ```
+3. **Customizable Interface**:  
+   - Allows specifying the network interface (e.g., `eth0`, `wlan0`) for targeted packet capture.  
 
-2. **Navigate to the project directory:**
+---
 
-    ```bash
-    cd packet-sniffer
-    ```
+### **Technologies Used** 🛠️:  
+- **Python** 🐍: For building the packet analyzer.  
+- **Scapy** 🛡️: A powerful Python library for packet sniffing and manipulation.  
 
-3. **Install the required dependencies:**
+---
 
-    ```bash
-    pip install scapy
-    ```
+This tool is a lightweight yet powerful solution for **network traffic analysis**, making it useful for **network security research** and understanding real-time traffic patterns. Looking forward to applying these concepts in more advanced projects! 🚀
 
-## Usage
-
-1. **Run the packet sniffer script:**
-
-    ```bash
-    python packet_sniffer.py
-    ```
-
-2. The script will start capturing packets and display the information in the console.
-
-## Important Notice
-
-**This packet sniffer is for educational purposes only.** Ensure that you have explicit permission to capture and analyze network traffic on any network you use this tool on. Unauthorized use of packet sniffers is illegal and unethical.
-
-## Ethical Considerations
-
-- **Obtain Consent:** Always get permission from the network owner or administrator before running this tool.
-- **Legal Compliance:** Ensure that your use of this script complies with local laws and regulations.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
-## Contributing
-
-If you'd like to contribute to this project, please fork the repository and use a feature branch. Pull requests are warmly welcome.
+---
 
 ### **Code**  
 
